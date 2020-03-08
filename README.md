@@ -3,11 +3,11 @@
 - [x] 记录1 —— 2020/3/8
   
   
-    一. 今天学习内容Git 及 Github 的基本操作及使用。
+    一. 今天学习内容 Git 及 Github 的基本操作及使用。
       
       1.Git 的下载与安装。
       
-      2.在Pycharm 中使用对Github 中的库的PULL 与PUSH。
+      2.在 Pycharm 中使用对 Github 中的库的 PULL 与 PUSH。
       
       3.Github 中建设仓库的操作
       
