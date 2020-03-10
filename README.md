@@ -67,6 +67,7 @@
      单个像素点的操作——将点(x,y)的颜色变为绿色
      image.putpixel((x,y),(0,255,0))```
      image.show()
+     print(image.getpixel((x,y)))  # 取的点（x,y）的颜色值
      一片区域的像素点的操作——将一片区域的颜色变为绿色
      for x in range(80,300):
             for y in range(100,400):
