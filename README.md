@@ -80,3 +80,35 @@
      form PIL import Image.Filter
      image.filter(Image.Filter.CONTOUR).show()
      ```
+
+
+   - [x] 记录3 —— 2020/03/11
+    
+   - 多线程的基础
+   
+     - multiprocessing 库的学习
+     
+        multiprocessing 是跨平台的多线程模块
+        ```
+       from multiprocessing import Process
+       from time import sleep
+       import os
+       
+       #定义一个函数 
+       def run(str):
+           while True:
+               # os.getpid()--获取当前进程的ID ，
+               # os.getppid()--获取当前进程的父进程的ID ，
+                 
+               print("sunck is a %s man--%s，父进程%s"% (str,os.getpid(),os.getppid())
+               sleep(1.2)
+        
+       if __name__ == '__main__':
+           # 建立线程，traget = 函数名  可以传多个参数 以元组模式，（注意元组中如果只有一个参数，后面需跟一个逗号）
+           p = Process(target=run,args=("nice",))
+           p.start()
+           while True:
+               print("主进程启动")
+               sleep(2) 
+       ```
+        
