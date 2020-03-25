@@ -19,13 +19,13 @@ def verifycode(request):
     #定义验证码的被选值
     str_list = '''1234567890QWERTYUIOPASDFGHJKLZXCVBNMqwertyuiopasdfghjklzxcvbnm'''
     #字体库
-    font_stype = ['Elephant','Ebrima']
+    font_stype = ['Arial','Ebrima','Bahnschrift','Calibri','Candara','Gadugi']
     # 随机选取4个值作为验证码
     str = ''
     for i in range(0,4):
         #构建字体对象
-        # font = ImageFont.truetype(r'C:\Windows\Fonts\%s.ttf'%(random.choice(font_stype)),40)
-        font = ImageFont.truetype(r'C:\Windows\Fonts\Ebrima.ttf',40)
+        font = ImageFont.truetype(r'C:\Windows\Fonts\%s.ttf'%(random.choice(font_stype)),40)
+        # font = ImageFont.truetype(r'C:\Windows\Fonts\Gadugi.ttf',40)
         #构建字体颜色
         fontcolor = (255,random.randrange(0,255),random.randrange(0,255))
         #随机取一个字符
