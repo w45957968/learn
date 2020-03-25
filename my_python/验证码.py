@@ -39,7 +39,7 @@ def verifycode(request):
         # 绘制一个字
         draw.text((x,0),str_rand,font=font,fill=fontcolor)
 
-    #释放画笔
+    #释放画笔，
     del draw
     #存入session，用于作进一步验证
     #request.session['verifycode']= str
